@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Input Number Incrementer</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+	<div class="main-box">
+		<div class="sub-box-count">
+			<label>Monstres</label>
+			<input type="text" name="monster" id="monster" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('monster')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('monster')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Chutes</label>
+			<input type="text" name="other" id="other" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('other')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('other')">-</button>
+			</div>
+		</div>
+
+		<h2>Boss DLC</h2>
+
+		<div class="sub-box-count">
+			<label>Gardien du Sanctuaire</label>
+			<input type="text" name="bossdlc1" id="bossdlc1" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('bossdlc1')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('bossdlc1')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Artorias</label>
+			<input type="text" name="bossdlc2" id="bossdlc2" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('bossdlc2')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('bossdlc2')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Manus</label>
+			<input type="text" name="bossdlc3" id="bossdlc3" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('bossdlc3')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('bossdlc3')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Kalameet</label>
+			<input type="text" name="bossdlc4" id="bossdlc4" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('bossdlc4')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('bossdlc4')">-</button>
+			</div>
+		</div>
+
+		<div class="box-total">
+			<label>Total</label>
+			<input type="text" name="total" id="total" value="0"></input>
+		</div>
+
+		<div class="box-button-action">
+			<button type="button" class="save" onclick="saveData()">Save</button>
+			<!--- <button type="button" class="update" onclick="updateData()">Update</button> --->
+		</div>
+		
+	</div>
+	<div class="main-box">
+		<div class="sub-box-count">
+			<label>Démon du Refuge</label>
+			<input type="text" name="boss1" id="boss1" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss1')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss1')">-</button>
+			</div>
+		</div>
+
+		<div class="sub-box-count">
+			<label>Démon Taureau</label>
+			<input type="text" name="boss2" id="boss2" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss2')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss2')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Gargouilles de la cloche</label>
+			<input type="text" name="boss3" id="boss3" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss3')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss3')">-</button>
+			</div>
+		</div>
+
+		<div class="sub-box-count">
+			<label>Démon Capra</label>
+			<input type="text" name="boss4" id="boss4" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss4')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss4')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Dragon Béant</label>
+			<input type="text" name="boss5" id="boss5" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss5')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss5')">-</button>
+			</div>
+		</div>
+
+		<div class="sub-box-count">
+			<label>Quelaag</label>
+			<input type="text" name="boss6" id="boss6" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss6')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss6')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Golem de Fer</label>
+			<input type="text" name="boss7" id="boss7" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss7')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss7')">-</button>
+			</div>
+		</div>
+
+		<div class="sub-box-count">
+			<label>Ornstein & Smough</label>
+			<input type="text" name="boss8" id="boss8" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss8')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss8')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Gwendoline</label>
+			<input type="text" name="boss9" id="boss9" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss9')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss9')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Priscilla</label>
+			<input type="text" name="boss10" id="boss10" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss10')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss10')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Démon errant</label>
+			<input type="text" name="boss11" id="boss11" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss11')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss11')">-</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-box">
+		<div class="sub-box-count">
+			<label>Décharge incessante</label>
+			<input type="text" name="boss12" id="boss12" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss12')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss12')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Démon Pyrosage</label>
+			<input type="text" name="boss13" id="boss13" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss13')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss13')">-</button>
+			</div>
+		</div>
+
+		<div class="sub-box-count">
+			<label>Démon Centipède</label>
+			<input type="text" name="boss14" id="boss14" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss14')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss14')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Foyer du Chaos</label>
+			<input type="text" name="boss15" id="boss15" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss15')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss15')">-</button>
+			</div>
+		</div>
+
+		<div class="sub-box-count">
+			<label>Papillon Clair de Lune</label>
+			<input type="text" name="boss16" id="boss16" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss16')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss16')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Sif</label>
+			<input type="text" name="boss17" id="boss17" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss17')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss17')">-</button>
+			</div>
+		</div>
+
+		<div class="sub-box-count">
+			<label>Quatre Rois</label>
+			<input type="text" name="boss18" id="boss18" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss18')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss18')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Virevent</label>
+			<input type="text" name="boss19" id="boss19" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss19')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss19')">-</button>
+			</div>
+		</div>
+
+		<div class="sub-box-count">
+			<label>Nito</label>
+			<input type="text" name="boss20" id="boss20" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss20')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss20')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Seath</label>
+			<input type="text" name="boss21" id="boss21" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss21')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss21')">-</button>
+			</div>
+		</div>
+
+		<div class="sub-box-count">
+			<label>Gwen</label>
+			<input type="text" name="boss22" id="boss22" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('boss22')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('boss22')">-</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-box">
+		<div class="sub-box-count">
+			<label>Sanglier</label>
+			<input type="text" name="miniboss1" id="miniboss1" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('miniboss1')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('miniboss1')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Chevalier Noir</label>
+			<input type="text" name="miniboss2" id="miniboss2" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('miniboss2')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('miniboss2')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Golem de cristal doré</label>
+			<input type="text" name="miniboss3" id="miniboss3" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('miniboss3')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('miniboss3')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Grand Félin</label>
+			<input type="text" name="miniboss4" id="miniboss4" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('miniboss4')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('miniboss4')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Rat Géant</label>
+			<input type="text" name="miniboss5" id="miniboss5" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('miniboss5')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('miniboss5')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Havel</label>
+			<input type="text" name="miniboss6" id="miniboss6" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('miniboss6')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('miniboss6')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Sanglier</label>
+			<input type="text" name="miniboss7" id="miniboss7" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('miniboss7')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('miniboss7')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Chevalier de Bernice</label>
+			<input type="text" name="miniboss8" id="miniboss8" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('miniboss8')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('miniboss8')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Dragon rouge</label>
+			<input type="text" name="miniboss9" id="miniboss9" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('miniboss9')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('miniboss9')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Hydre</label>
+			<input type="text" name="miniboss10" id="miniboss10" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('miniboss10')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('miniboss10')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Démon de Titanite</label>
+			<input type="text" name="miniboss11" id="miniboss11" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('miniboss11')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('miniboss11')">-</button>
+			</div>
+		</div>
+		<div class="sub-box-count">
+			<label>Dragon mort-vivant</label>
+			<input type="text" name="miniboss12" id="miniboss12" class="count" value="0"></input>
+			<div class="box-button">
+				<button type="button" class="upgrade" onclick="upgrade('miniboss12')">+</button>
+				<button type="button" class="downgrade" onclick="downgrade('miniboss12')">-</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
