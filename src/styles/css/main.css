@@ -1,7 +1,6 @@
 /* Color */
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
   background-color: #333333;
 }
 
@@ -59,10 +58,13 @@ table {
   border-spacing: 0;
 }
 
+button p {
+  font-size: 10px;
+}
 button.btn-extend {
   display: flex;
-  width: 80px;
-  padding: 6px 0px;
+  align-items: center;
+  padding: 6px 10px 6px 4px;
   border: none;
   border-radius: 4px;
   text-decoration: none;
@@ -78,9 +80,7 @@ button.btn-archive, button.btn-cancel {
   background-color: #DC3545;
 }
 button svg {
-  position: relative;
-  left: 6px;
-  margin-right: 12px;
+  margin-right: 6px;
 }
 
 /*# sourceMappingURL=main.css.map */

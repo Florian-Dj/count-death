@@ -1,9 +1,11 @@
 button{
-
+    & p{
+        font-size: 10px;
+    }
     &.btn-extend {
         display: flex;
-        width: 80px;
-        padding: 6px 0px;
+        align-items: center;
+        padding: 6px 10px 6px 4px;
         border: none;
         border-radius: 4px;
         text-decoration: none;
@@ -20,8 +22,6 @@ button{
         background-color: $color-button-red;
     }
     svg{
-        position: relative;
-        left: 6px;
-        margin-right: 12px;
+        margin-right: 6px;
     }
 }
