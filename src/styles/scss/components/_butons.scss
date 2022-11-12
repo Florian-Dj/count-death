@@ -1,0 +1,27 @@
+button{
+
+    &.btn-extend {
+        display: flex;
+        width: 80px;
+        padding: 6px 0px;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        color: $color-text;
+    }
+        
+    &.btn-add, &.btn-save{
+        background-color: $color-button-green;
+    }
+    &.btn-edit{
+        background-color: $color-button-blue;
+    }
+    &.btn-archive, &.btn-cancel{
+        background-color: $color-button-red;
+    }
+    svg{
+        position: relative;
+        left: 6px;
+        margin-right: 12px;
+    }
+}
