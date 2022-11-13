@@ -78,6 +78,15 @@ button.btn-extend svg {
 button.btn-mini {
   padding: 6px;
 }
+button.btn-steam {
+  background: url("https://api.iconify.design/fa-brands/steam.svg") no-repeat center center/contain;
+  background-color: #FFFFFF;
+  padding: 14px;
+  border-radius: 50%;
+}
+button.btn-steam:hover {
+  background: url("https://api.iconify.design/fa-brands/steam.svg?color=white") no-repeat center center/contain;
+}
 button.btn-add, button.btn-save {
   background-color: #28A745;
 }
@@ -96,15 +105,6 @@ button.btn-carousel-off {
 button.btn-carousel-on {
   background-color: #333333;
   border: solid 0.5px #FFFFFF;
-}
-button.btn-steam {
-  background: url("https://api.iconify.design/fa-brands/steam.svg") no-repeat center center/contain;
-  background-color: #FFFFFF;
-  padding: 14px;
-  border-radius: 50%;
-}
-button.btn-steam:hover {
-  background: url("https://api.iconify.design/fa-brands/steam.svg?color=white") no-repeat center center/contain;
 }
 
 /*# sourceMappingURL=main.css.map */
