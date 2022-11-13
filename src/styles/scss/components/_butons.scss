@@ -1,17 +1,27 @@
 button{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    color: $color-text;
+
     & p{
         font-size: 10px;
     }
+
     &.btn-extend {
-        display: flex;
-        align-items: center;
         padding: 6px 10px 6px 4px;
-        border: none;
-        border-radius: 4px;
-        text-decoration: none;
-        color: $color-text;
-    }
         
+        & svg{
+            margin-right: 6px;
+        }
+    }
+
+    &.btn-mini {
+        padding: 6px;
+    }
+
     &.btn-add, &.btn-save{
         background-color: $color-button-green;
     }
@@ -21,7 +31,23 @@ button{
     &.btn-archive, &.btn-cancel{
         background-color: $color-button-red;
     }
-    svg{
-        margin-right: 6px;
+    &.btn-up, &.btn-down{
+        background-color: $color-text;
+    }
+    &.btn-carousel-off{
+        background-color: $color-text;
+    }
+    &.btn-carousel-on{
+        background-color: $color-background;
+        border: solid 0.5px $color-text;
+    }
+    &.btn-steam{
+        background: url('https://api.iconify.design/fa-brands/steam.svg') no-repeat center center / contain;
+        background-color: $color-text;
+        padding: 14px;
+        border-radius: 50%;
+        &:hover{
+            background: url('https://api.iconify.design/fa-brands/steam.svg?color=white') no-repeat center center / contain;
+        }
     }
 }

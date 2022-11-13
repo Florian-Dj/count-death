@@ -58,17 +58,25 @@ table {
   border-spacing: 0;
 }
 
-button p {
-  font-size: 10px;
-}
-button.btn-extend {
+button {
   display: flex;
   align-items: center;
-  padding: 6px 10px 6px 4px;
   border: none;
   border-radius: 4px;
   text-decoration: none;
   color: #FFFFFF;
+}
+button p {
+  font-size: 10px;
+}
+button.btn-extend {
+  padding: 6px 10px 6px 4px;
+}
+button.btn-extend svg {
+  margin-right: 6px;
+}
+button.btn-mini {
+  padding: 6px;
 }
 button.btn-add, button.btn-save {
   background-color: #28A745;
@@ -79,8 +87,24 @@ button.btn-edit {
 button.btn-archive, button.btn-cancel {
   background-color: #DC3545;
 }
-button svg {
-  margin-right: 6px;
+button.btn-up, button.btn-down {
+  background-color: #FFFFFF;
+}
+button.btn-carousel-off {
+  background-color: #FFFFFF;
+}
+button.btn-carousel-on {
+  background-color: #333333;
+  border: solid 0.5px #FFFFFF;
+}
+button.btn-steam {
+  background: url("https://api.iconify.design/fa-brands/steam.svg") no-repeat center center/contain;
+  background-color: #FFFFFF;
+  padding: 14px;
+  border-radius: 50%;
+}
+button.btn-steam:hover {
+  background: url("https://api.iconify.design/fa-brands/steam.svg?color=white") no-repeat center center/contain;
 }
 
 /*# sourceMappingURL=main.css.map */
