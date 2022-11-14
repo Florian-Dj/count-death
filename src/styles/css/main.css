@@ -107,4 +107,26 @@ button.btn-carousel-on {
   border: solid 0.5px #FFFFFF;
 }
 
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  background-color: #28A745;
+}
+#cards.card {
+  position: relative; /* absolute */
+  display: block;
+  float: left;
+  border-style: solid;
+  border-color: grey;
+  width: 49%;
+  height: 49%;
+  overflow: hidden; /* hidden*/
+}
+#cards.card img {
+  position: absolute;
+}
+
 /*# sourceMappingURL=main.css.map */

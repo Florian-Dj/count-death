@@ -1,0 +1,23 @@
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    background-color: $color-button-green;
+
+    &.card{
+        position:relative; /* absolute */
+        display:block;
+        float:left;
+        border-style: solid;
+        border-color: grey;
+        width:49%;
+        height:49%;
+        overflow:hidden; /* hidden*/
+
+        & img{
+            position: absolute;
+        }
+    }
+}
