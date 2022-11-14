@@ -22,13 +22,24 @@
             height: 100%;
             border-radius: $radius-cards;
             opacity: 75%;
+            color: $color-text;
         }
 
         .btn-cards{
             display: none;
         }
+        h2{
+            display: none;
+        }
 
         &:hover{
+
+            h2{
+                display: block;
+                position: absolute;
+                top: 25px;
+                z-index: 1;
+            }
 
             img{ 
                 opacity: 25%;

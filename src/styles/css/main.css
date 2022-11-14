@@ -1,8 +1,24 @@
 /* Color */
+/* Text */
 /* Cards */
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #333333;
+}
+body h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+body h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+body p {
+  font-size: 12px;
+  font-weight: normal;
+  color: #FFFFFF;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -67,9 +83,6 @@ table {
   text-decoration: none;
   color: #FFFFFF;
 }
-.btn p {
-  font-size: 12px;
-}
 .btn.btn-extend {
   padding: 6px 10px 6px 4px;
 }
@@ -132,9 +145,19 @@ table {
   height: 100%;
   border-radius: 12px;
   opacity: 75%;
+  color: #FFFFFF;
 }
 #cards .card .btn-cards {
   display: none;
+}
+#cards .card h2 {
+  display: none;
+}
+#cards .card:hover h2 {
+  display: block;
+  position: absolute;
+  top: 25px;
+  z-index: 1;
 }
 #cards .card:hover img {
   opacity: 25%;

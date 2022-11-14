@@ -1,4 +1,21 @@
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-policy;
     background-color: $color-background;
+    h2{
+        font-size: $h2-font-size;
+        font-weight: $h2-font-weight;
+        color: $color-text;
+    }
+    
+    h3{
+        font-size: $h3-font-size;
+        font-weight: $h3-font-weight;
+        color: $color-text;
+    }
+    
+    p{
+        font-size: $p-font-size;
+        font-weight: $p-font-weight;
+        color: $color-text;
+    }
 }
