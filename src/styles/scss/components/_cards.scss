@@ -1,22 +1,53 @@
 #cards{
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    gap: 2em;
+    width: 80%;
+
     .card{
         position: relative;
-        display:block;
-        float:left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         border: solid 2px $color-text;
-        border-radius: 12px;
+        border-radius: $radius-cards;
         width:320px;
         height:150px;
-        overflow:hidden;
+
         img{
             width: 100%;
             height: 100%;
+            border-radius: $radius-cards;
+            opacity: 75%;
         }
 
+        .btn-cards{
+            display: none;
+        }
+
+        &:hover{
+
+            img{ 
+                opacity: 25%;
+            }
+
+            .btn-cards{
+                position: absolute;
+                bottom: 10px;
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 1;
+            }
+            .btn-cards-editdel{
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+            }
+        }
     }
 }

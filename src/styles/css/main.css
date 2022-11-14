@@ -1,4 +1,5 @@
 /* Color */
+/* Cards */
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #333333;
@@ -58,7 +59,7 @@ table {
   border-spacing: 0;
 }
 
-button {
+.btn {
   display: flex;
   align-items: center;
   border: none;
@@ -66,43 +67,43 @@ button {
   text-decoration: none;
   color: #FFFFFF;
 }
-button p {
+.btn p {
   font-size: 12px;
 }
-button.btn-extend {
+.btn.btn-extend {
   padding: 6px 10px 6px 4px;
 }
-button.btn-extend svg {
+.btn.btn-extend svg {
   margin-right: 6px;
 }
-button.btn-mini {
+.btn.btn-mini {
   padding: 6px;
 }
-button.btn-steam {
+.btn.btn-steam {
   background: url("https://api.iconify.design/fa-brands/steam.svg") no-repeat center center/contain;
   background-color: #FFFFFF;
   padding: 14px;
   border-radius: 50%;
 }
-button.btn-steam:hover {
+.btn.btn-steam:hover {
   background: url("https://api.iconify.design/fa-brands/steam.svg?color=white") no-repeat center center/contain;
 }
-button.btn-add, button.btn-save {
+.btn.btn-add, .btn.btn-save {
   background-color: #28A745;
 }
-button.btn-edit {
+.btn.btn-edit {
   background-color: #0069D9;
 }
-button.btn-archive, button.btn-cancel {
+.btn.btn-archive, .btn.btn-cancel {
   background-color: #DC3545;
 }
-button.btn-up, button.btn-down {
+.btn.btn-up, .btn.btn-down {
   background-color: #FFFFFF;
 }
-button.btn-carousel-off {
+.btn.btn-carousel-off {
   background-color: #FFFFFF;
 }
-button.btn-carousel-on {
+.btn.btn-carousel-on {
   background-color: #333333;
   border: solid 0.5px #FFFFFF;
 }
@@ -110,23 +111,47 @@ button.btn-carousel-on {
 #cards {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  gap: 2em;
+  width: 80%;
 }
 #cards .card {
   position: relative;
-  display: block;
-  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: solid 2px #FFFFFF;
   border-radius: 12px;
   width: 320px;
   height: 150px;
-  overflow: hidden;
 }
 #cards .card img {
   width: 100%;
   height: 100%;
+  border-radius: 12px;
+  opacity: 75%;
+}
+#cards .card .btn-cards {
+  display: none;
+}
+#cards .card:hover img {
+  opacity: 25%;
+}
+#cards .card:hover .btn-cards {
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+#cards .card:hover .btn-cards-editdel {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */
