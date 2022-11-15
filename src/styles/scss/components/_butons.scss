@@ -16,17 +16,10 @@
     &.btn-mini {
         padding: 6px;
     }
-
-    &.btn-steam{
-        background: url('https://api.iconify.design/fa-brands/steam.svg') no-repeat center center / contain;
-        background-color: $color-text;
-        padding: 14px;
-        border-radius: 50%;
-        &:hover{
-            background: url('https://api.iconify.design/fa-brands/steam.svg?color=white') no-repeat center center / contain;
-        }
+    &.btn-add{
+        background-color: $color-button-green;
     }
-    &.btn-add, &.btn-save{
+    &.btn-save{
         background-color: $color-button-green;
     }
     &.btn-edit{
@@ -44,5 +37,18 @@
     &.btn-carousel-on{
         background-color: $color-background;
         border: solid 0.5px $color-text;
+    }
+}
+
+a{
+    width: 20px;
+    height: 20px;
+    &.btn-steam{
+        background: url('https://api.iconify.design/fa-brands/steam.svg') no-repeat center center / contain;
+        background-color: $color-text;
+        border-radius: 50%;
+        &:hover{
+            background: url('https://api.iconify.design/fa-brands/steam.svg?color=white') no-repeat center center / contain;
+        }
     }
 }

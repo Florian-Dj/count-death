@@ -92,16 +92,10 @@ table {
 .btn.btn-mini {
   padding: 6px;
 }
-.btn.btn-steam {
-  background: url("https://api.iconify.design/fa-brands/steam.svg") no-repeat center center/contain;
-  background-color: #FFFFFF;
-  padding: 14px;
-  border-radius: 50%;
+.btn.btn-add {
+  background-color: #28A745;
 }
-.btn.btn-steam:hover {
-  background: url("https://api.iconify.design/fa-brands/steam.svg?color=white") no-repeat center center/contain;
-}
-.btn.btn-add, .btn.btn-save {
+.btn.btn-save {
   background-color: #28A745;
 }
 .btn.btn-edit {
@@ -119,6 +113,19 @@ table {
 .btn.btn-carousel-on {
   background-color: #333333;
   border: solid 0.5px #FFFFFF;
+}
+
+a {
+  width: 20px;
+  height: 20px;
+}
+a.btn-steam {
+  background: url("https://api.iconify.design/fa-brands/steam.svg") no-repeat center center/contain;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+a.btn-steam:hover {
+  background: url("https://api.iconify.design/fa-brands/steam.svg?color=white") no-repeat center center/contain;
 }
 
 .card {
