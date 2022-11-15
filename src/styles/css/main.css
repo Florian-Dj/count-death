@@ -101,7 +101,13 @@ table {
 .btn.btn-steam:hover {
   background: url("https://api.iconify.design/fa-brands/steam.svg?color=white") no-repeat center center/contain;
 }
-.btn.btn-add, .btn.btn-save {
+.btn.btn-add {
+  position: absolute;
+  top: 70px;
+  right: 150px;
+  background-color: #28A745;
+}
+.btn.btn-save {
   background-color: #28A745;
 }
 .btn.btn-edit {

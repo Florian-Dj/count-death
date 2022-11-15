@@ -26,7 +26,13 @@
         }
     }
 
-    &.btn-add, &.btn-save{
+    &.btn-add{
+        position: absolute;
+        top: 70px;
+        right: 150px;
+        background-color: $color-button-green;
+    }
+    &.btn-save{
         background-color: $color-button-green;
     }
     &.btn-edit{
