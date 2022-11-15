@@ -16,6 +16,7 @@
     &.btn-mini {
         padding: 6px;
     }
+
     &.btn-steam{
         background: url('https://api.iconify.design/fa-brands/steam.svg') no-repeat center center / contain;
         background-color: $color-text;
@@ -25,14 +26,7 @@
             background: url('https://api.iconify.design/fa-brands/steam.svg?color=white') no-repeat center center / contain;
         }
     }
-
-    &.btn-add{
-        position: absolute;
-        top: 70px;
-        right: 150px;
-        background-color: $color-button-green;
-    }
-    &.btn-save{
+    &.btn-add, &.btn-save{
         background-color: $color-button-green;
     }
     &.btn-edit{
