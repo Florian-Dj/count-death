@@ -1,0 +1,23 @@
+{
+  "name": "count-death",
+  "version": "0.1.0",
+  "description": "Web page to count the number of deaths on a multiple games",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Florian-Dj/count-death.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Florian-Dj/count-death/issues"
+  },
+  "homepage": "https://github.com/Florian-Dj/count-death#readme",
+  "dependencies": {
+    "mariadb": "^3.0.2",
+    "sass": "^1.56.1"
+  }
+}
